@@ -1,19 +1,28 @@
 return {
-    'rose-pine/neovim',
-    name = 'rose-pine',
+    'EdenEast/nightfox.nvim',
+    name = 'nightfox',
 
     config = function()
-        require('rose-pine').setup({
-            variant = 'main',
-            dim_inactive_windows = true,
-            extend_background_behind_borders = true,
-
-            styles = {
-                bold = true,
-                italic = true,
-                transparency = true,
+        require('nightfox').setup({
+            palettes = {
+                carbonfox = {
+                    bg1 = "#000000",
+                    bg0 = "#000000",
+                    bg3 = "#000000",
+                },
             },
+
+            options = {
+                transparent = false,
+                dim_inactive = true,
+
+                styles = {
+                    comments = "italic",
+                    types = "italic,bold",
+                    functions = "NONE",
+                },
+            }
         })
-        vim.cmd('colorscheme rose-pine')
+        vim.cmd('colorscheme carbonfox')
     end
 }
