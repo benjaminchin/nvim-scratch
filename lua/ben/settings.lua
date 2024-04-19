@@ -15,3 +15,4 @@ vim.opt.swapfile = false
 vim.opt.wrap = true
 
 vim.g.have_nerd_font = true
+
