@@ -18,7 +18,7 @@ return {
 
                 styles = {
                     comments = "italic",
-                    types = "italic,bold",
+                    types = "italic",
                     functions = "NONE",
                 },
             }
