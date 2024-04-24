@@ -12,6 +12,7 @@ return {
                     "lua_ls",
                     "clangd",
                     "jdtls",
+                    "gopls",
                 }
             })
         end
@@ -22,6 +23,7 @@ return {
             local lspconfig = require('lspconfig')
             lspconfig.lua_ls.setup({})
             lspconfig.clangd.setup({})
+            lspconfig.gopls.setup({})
             --lspconfig.jdtls.setup({}) jdtls is handled via nvim-jdtls
         end
     },
