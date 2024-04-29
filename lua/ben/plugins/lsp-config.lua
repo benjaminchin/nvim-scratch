@@ -13,6 +13,7 @@ return {
                     "clangd",
                     "jdtls",
                     "gopls",
+                    "pyright",
                 }
             })
         end
@@ -24,6 +25,7 @@ return {
             lspconfig.lua_ls.setup({})
             lspconfig.clangd.setup({})
             lspconfig.gopls.setup({})
+            lspconfig.pyright.setup({})
             --lspconfig.jdtls.setup({}) jdtls is handled via nvim-jdtls
         end
     },
